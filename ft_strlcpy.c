@@ -6,18 +6,27 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:48:50 by thfourni          #+#    #+#             */
-/*   Updated: 2023/02/21 16:15:17 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:34:29 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strlcpy(char *dest, char *src, int n)
+#include "libft.h"
+
+int	ft_strlcpy(char *dest, char *src, int len)
 {
 	int	i;
 
+	if (!dest || !src)
+		return (0);
 	i = 0;
-	while (src[i] && i < n)
+	if (len > 0)
 	{
-		dest[i] = src[i];
-		i++;
+		while (--len && src[i])
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
+	return (ft_strlen(src));
 }

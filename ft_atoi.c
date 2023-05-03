@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:50:46 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:54:43 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 18:06:53 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,11 @@ int	ft_atoi(char *str)
 	neg = 1;
 	while (is_whitespace(str[i]))
 		i++;
-	while (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			neg *= -1;
+	if (str[i] == '-')
+		neg *= -1;
+	if (str[i] == '-' || str[i] == '+')
 		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;

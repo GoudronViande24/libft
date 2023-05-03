@@ -5,78 +5,58 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 17:59:46 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/12 18:38:12 by thfourni         ###   ########.fr       */
+/*   Created: 2023/05/03 18:26:38 by thfourni          #+#    #+#             */
+/*   Updated: 2023/05/03 18:35:36 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 #include "libft.h"
 
-int	ft_countwords(char const *s, char c)
+static unsigned int	ft_countwords(const char *s, char c)
 {
-	int	i;
-	int	count;
+	unsigned int	count;
 
-	i = 0;
-	count = 1;
-	while (s[i])
+	count = 0;
+	while (*s)
 	{
-		if (s[i] == c)
+		if (*s != c)
+		{
 			count++;
-		i++;
+			while (*s && *s != c)
+				s++;
+		}
+		else
+			s++;
 	}
 	return (count);
 }
 
-char	**ft_maketab(char const *s, char c)
-{
-	char	**tab;
-	int		count;
-	int		i;
-	int		j;
-
-	count = ft_countwords(s, c);
-	tab = malloc(sizeof(*s) * (count + 1));
-	if (!tab)
-		return (0);
-	i = 0;
-	j = 0;
-	while (s[i])
-	{
-		if (s[i] == c)
-			tab[j++] = malloc(sizeof(*s) * (i + 1));
-		i++;
-	}
-	tab[count] = 0;
-	return (tab);
-}
-
 char	**ft_split(char const *s, char c)
 {
-	char	**tab;
-	int		i;
-	int		j;
-	int		k;
+	char			**tab;
+	unsigned int	i;
+	unsigned int	j;
 
-	tab = ft_maketab(s, c);
-	if (!tab)
+	if (!s)
 		return (0);
 	i = 0;
-	j = 0;
-	k = 0;
-	while (s[i])
+	tab = malloc(sizeof(char *) * (ft_countwords(s, c) + 1));
+	if (!tab)
+		return (0);
+	while (*s)
 	{
-		if (s[i] == c)
+		if (*s != c)
 		{
-			tab[j][k] = 0;
-			j++;
-			k = 0;
+			j = 0;
+			while (*s && *s != c && ++j)
+				s++;
+			tab[i++] = ft_substr(s - j, 0, j);
 		}
 		else
-			tab[j][k++] = s[i];
-		i++;
+			s++;
 	}
-	tab[j][k] = 0;
+	tab[i] = 0;
 	return (tab);
 }

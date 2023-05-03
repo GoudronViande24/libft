@@ -6,13 +6,13 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:48:50 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:34:29 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 18:21:14 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlcpy(char *dest, char *src, int len)
+int	ft_strlcpy(char *dest, char *src, unsigned int len)
 {
 	int	i;
 

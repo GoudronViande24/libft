@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:20:24 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/17 13:25:33 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:56:05 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *dest, int c, unsigned int n)
 {

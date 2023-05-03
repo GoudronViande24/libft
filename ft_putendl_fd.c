@@ -6,11 +6,13 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:05:17 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/17 13:06:15 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:56:18 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

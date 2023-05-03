@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:42:48 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:21:57 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:56:02 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, void *src, int len)
 {

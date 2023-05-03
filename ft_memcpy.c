@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:35:29 by thfourni          #+#    #+#             */
-/*   Updated: 2023/02/16 23:41:36 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:55:59 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, void *src, int n)
 {

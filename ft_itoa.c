@@ -6,11 +6,13 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:38:55 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/12 18:49:29 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:55:17 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
+#include "libft.h"
 
 int	ft_countdigits(int n)
 {

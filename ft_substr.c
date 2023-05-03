@@ -6,11 +6,13 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 14:39:07 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/17 13:16:17 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:57:31 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
+#include "libft.h"
 
 char	*ft_substr(char const *src, unsigned int start, unsigned int len)
 {

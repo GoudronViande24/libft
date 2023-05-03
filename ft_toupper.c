@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:24:59 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/09 02:29:51 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:57:39 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	ft_toupper(char c)
 {

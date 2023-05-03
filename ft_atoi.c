@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:50:46 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/09 02:57:05 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:54:43 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	is_whitespace(char c)
 {

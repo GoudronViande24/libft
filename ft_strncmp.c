@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:37:32 by thfourni          #+#    #+#             */
-/*   Updated: 2023/04/09 02:37:37 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:57:21 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

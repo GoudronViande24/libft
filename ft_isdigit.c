@@ -6,9 +6,11 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:13:47 by thfourni          #+#    #+#             */
-/*   Updated: 2023/02/16 15:14:44 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:55:09 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(unsigned char c)
 {

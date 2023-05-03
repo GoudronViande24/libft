@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:09:52 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 17:39:06 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/03 17:45:44 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_isalpha(unsigned char c);
 int		ft_isascii(unsigned char c);
 int		ft_isdigit(unsigned char c);
 int		ft_isprint(unsigned char c);
-void	*ft_memchr(char *s, int c, unsigned int n);
+void	*ft_memchr(const void *s, int c, unsigned int n);
 int		ft_memcmp(unsigned char *s1, unsigned char *s2, unsigned int n);
 void	*ft_memcpy(void *dest, void *src, int n);
 void	*ft_memmove(void *dest, void *src, int len);

@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:38:55 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:55:17 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/04 14:43:52 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 #include "libft.h"
 
-int	ft_countdigits(int n)
+int	ft_countdigits(long n)
 {
 	int	i;
 
-	i = 1;
+	if (n == 0)
+		return (1);
+	i = 0;
 	while (n)
 	{
 		n /= 10;
@@ -32,13 +34,15 @@ char	*ft_itoa(int n)
 	char	*str;
 	int		len;
 	int		neg;
+	long	nb;
 
-	len = ft_countdigits(n);
+	nb = n;
+	len = ft_countdigits(nb);
 	neg = 0;
-	if (n < 0)
+	if (nb < 0)
 	{
 		neg = 1;
-		n = -n;
+		nb = -nb;
 	}
 	str = malloc(sizeof(*str) * (len + neg + 1));
 	if (!str)
@@ -48,8 +52,8 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	while (len--)
 	{
-		str[len + neg] = n % 10 + '0';
-		n /= 10;
+		str[len + neg] = nb % 10 + '0';
+		nb /= 10;
 	}
 	return (str);
 }

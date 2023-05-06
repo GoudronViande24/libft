@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:48:50 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 18:21:14 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/05 23:27:35 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ int	ft_strlcpy(char *dest, char *src, unsigned int len)
 {
 	int	i;
 
-	if (!dest || !src)
-		return (0);
 	i = 0;
 	if (len > 0)
 	{

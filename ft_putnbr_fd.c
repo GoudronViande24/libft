@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:06:49 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:56:23 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/05 20:47:59 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,16 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;
+	long	nb;
 
-	if (n < 0)
+	nb = n;
+	if (nb < 0)
 	{
 		write(fd, "-", 1);
-		n = -n;
+		nb = -nb;
 	}
-	if (n > 9)
-		ft_putnbr_fd(n / 10, fd);
-	c = n % 10 + '0';
+	if (nb > 9)
+		ft_putnbr_fd(nb / 10, fd);
+	c = nb % 10 + '0';
 	write(fd, &c, 1);
 }

@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:57:46 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:54:53 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 16:39:03 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_calloc(int count, int size)
 
 	i = 0;
 	ptr = malloc(count * size);
-	if (ptr == 0)
-		return (0);
+	if (!ptr)
+		return (NULL);
 	while (i < count * size)
 	{
 		ptr[i] = 0;

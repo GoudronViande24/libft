@@ -6,13 +6,15 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:13:47 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:55:09 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:10:47 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(unsigned char c)
+int	ft_isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+	if (c >= '0' && c <= '9')
+		return (c);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:09:52 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/16 14:14:49 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:41:30 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 int		ft_atoi(char *str);
 void	ft_bzero(char *s, int n);
 void	*ft_calloc(int count, int size);
-int		ft_isalnum(unsigned char c);
-int		ft_isalpha(unsigned char c);
-int		ft_isascii(unsigned char c);
-int		ft_isdigit(unsigned char c);
-int		ft_isprint(unsigned char c);
+int		ft_isalpha(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
 void	*ft_memchr(const void *s, int c, unsigned int n);
 int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
 void	*ft_memcpy(void *dest, void *src, int n);
@@ -34,8 +34,8 @@ int		ft_strlen(const char *s);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 char	*ft_strnstr(char *s1, char *s2, unsigned int len);
 char	*ft_strrchr(char *s, char c);
-char	ft_tolower(char c);
-char	ft_toupper(char c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 char	*ft_substr(char const *s, unsigned int start, unsigned int len);
 char	*ft_strjoin(char const *s1, char const *s2);

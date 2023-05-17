@@ -6,13 +6,15 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:16:14 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:55:12 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:10:55 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(unsigned char c)
+int	ft_isprint(int c)
 {
-	return (c >= ' ' && c <= '~');
+	if (c >= ' ' && c <= '~')
+		return (c);
+	return (0);
 }

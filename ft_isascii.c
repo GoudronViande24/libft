@@ -6,13 +6,13 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:21:30 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/16 14:52:26 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:15:55 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(unsigned char c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

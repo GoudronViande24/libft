@@ -6,17 +6,15 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:33:03 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:57:35 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:41:20 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_tolower(char c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
-		c += 32;
-	}
+		return (c + 32);
 	return (c);
 }

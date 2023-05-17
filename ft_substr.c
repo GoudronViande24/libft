@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 14:39:07 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/17 17:21:39 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 18:04:13 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(const char *src, unsigned int start, unsigned int len)
 
 	if (!src)
 		return (NULL);
+	if (start > (unsigned int)ft_strlen(src))
+		return (ft_strdup(""));
 	if ((unsigned int)ft_strlen(src) < start)
 		len = 0;
 	if ((unsigned int)ft_strlen(src + start) < len)

@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:09:52 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/17 14:41:30 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 17:54:30 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
 void	*ft_memcpy(void *dest, void *src, int n);
 void	*ft_memmove(void *dest, void *src, int len);
 void	*ft_memset(void *s, int c, unsigned int n);
-char	*ft_strdup(char *s1);
+char	*ft_strdup(char const *s1);
 char	*ft_strchr(char *s, char c);
 int		ft_strlcat(char *dest, char *src, unsigned int len);
 int		ft_strlcpy(char *dest, char *src, unsigned int len);

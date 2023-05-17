@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 03:17:50 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 16:56:41 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/17 17:54:17 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(char const *src)
 {
 	int		i;
 	char	*dest;

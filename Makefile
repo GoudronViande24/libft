@@ -6,7 +6,7 @@
 #    By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/16 15:07:21 by thfourni          #+#    #+#              #
-#    Updated: 2023/05/16 14:19:30 by thfourni         ###   ########.fr        #
+#    Updated: 2023/05/29 15:13:19 by thfourni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJS) libft.a
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)

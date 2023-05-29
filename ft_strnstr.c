@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:46:45 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 17:59:38 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/29 15:24:44 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(char *s1, char *s2, unsigned int len)
 	unsigned int	i;
 	unsigned int	j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	if (!*s2)
 		return (s1);
 	i = 0;

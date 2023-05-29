@@ -6,12 +6,14 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:09:52 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/17 17:54:30 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/29 15:21:27 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <unistd.h>
+# include <stdlib.h>
 
 int		ft_atoi(char *str);
 void	ft_bzero(char *s, int n);

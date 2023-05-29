@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 03:17:50 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/17 17:54:17 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/29 15:20:54 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strdup(char const *src)
 	int		i;
 	char	*dest;
 
+	if (!src)
+		return (NULL);
 	i = 0;
 	while (src[i])
 		i++;

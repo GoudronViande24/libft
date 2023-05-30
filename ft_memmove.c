@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 23:42:48 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/29 15:19:43 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:34:53 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, void *src, int len)
 	char	*new_dest;
 	char	*new_src;
 
-	if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
 	if (dest == src || len == 0)
 		return (dest);

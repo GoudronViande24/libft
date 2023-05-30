@@ -6,7 +6,7 @@
 /*   By: thfourni <thfourni@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 02:50:46 by thfourni          #+#    #+#             */
-/*   Updated: 2023/05/03 18:06:53 by thfourni         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:33:16 by thfourni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_atoi(char *str)
 	int	neg;
 	int	result;
 
+	if (!str)
+		return (0);
 	i = 0;
 	result = 0;
 	neg = 1;
